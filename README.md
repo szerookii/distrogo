@@ -37,13 +37,13 @@ import (
 )
 
 func main() {
-	distrokid := distrogo.NewDistroKid("your-bearer-token")
-
-	releases, err := distrokid.GetReleases()
-
-	if err != nil {
-		panic(err)
-	}
+  distrokid := distrogo.NewDistroKid("your-bearer-token")
+  
+  releases, err := distrokid.GetReleases()
+  
+  if err != nil {
+    panic(err)
+  }
 
   fmt.Printf("Found %d releases\n", len(releases))
 }
