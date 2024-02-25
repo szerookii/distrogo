@@ -30,7 +30,9 @@ To use DistroGo, you need to retrieved your DistroKid API bearer token. You can 
 ```go
 package main
 
-import ("fmt"
+import (
+  "fmt"
+
   "github.com/szerookii/distrogo"
 )
 
