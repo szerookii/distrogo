@@ -30,20 +30,18 @@ To use DistroGo, you need to retrieved your DistroKid API bearer token. You can 
 ```go
 package main
 
-import (
-	"fmt"
-
-	"github.com/szerookii/distrogo"
+import ("fmt"
+  "github.com/szerookii/distrogo"
 )
 
 func main() {
-	distrokid := distrogo.NewDistroKid("your-bearer-token")
-
-	releases, err := distrokid.GetReleases()
-
-	if err != nil {
-		panic(err)
-	}
+  distrokid := distrogo.NewDistroKid("your-bearer-token")
+  
+  releases, err := distrokid.GetReleases()
+  
+  if err != nil {
+    panic(err)
+  }
 
   fmt.Printf("Found %d releases\n", len(releases))
 }
